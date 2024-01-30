@@ -1,0 +1,41 @@
+/* ... (existing styles) ... */
+
+.for-providers span {
+    display: inline-block;
+    font-family: 'Jost-medium', sans-serif;
+  }
+  
+  .for-providers:hover span {
+    color: #3498db; /* Change to the desired hover color (blue in this case) */
+    cursor: pointer;
+  }
+  
+  .providers-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .for-providers:hover .providers-dropdown {
+    display: block;
+  }
+  
+  .providers-dropdown a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font-family: 'Jost-medium', sans-serif;
+    transition: color 0.3s, background-color 0.3s; /* Add smooth transitions */
+  }
+  
+  .providers-dropdown a:hover {
+    color: #3498db; /* Change to the desired hover color (blue in this case) */
+    background-color: #f0f0f0; /* Change to the desired hover background color */
+    cursor: pointer;
+  }
+  
+  /* ... (existing styles) ... */
+  
