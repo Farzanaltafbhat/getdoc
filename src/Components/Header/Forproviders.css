@@ -2,12 +2,16 @@
 
 .for-providers span {
     display: inline-block;
-    font-family: 'Jost-medium', sans-serif;
+    font-family: 'Jost', sans-serif;
+    padding-top: 23px;
   }
   
   .for-providers:hover span {
     color: #3498db; /* Change to the desired hover color (blue in this case) */
     cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    justify-self: center;
+    align-items: center;
   }
   
   .providers-dropdown {
@@ -16,10 +20,16 @@
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    font-family: 'Jost', sans-serif;
+    justify-self: center;
+    align-items: center;
+    padding-left: -50px;
   }
   
   .for-providers:hover .providers-dropdown {
     display: block;
+    justify-self: center;
+    align-items: center;
   }
   
   .providers-dropdown a {
@@ -27,8 +37,10 @@
     text-decoration: none;
     display: block;
     color: #333;
-    font-family: 'Jost-medium', sans-serif;
-    transition: color 0.3s, background-color 0.3s; /* Add smooth transitions */
+    font-family: 'Jost', sans-serif;
+    transition: color 0.3s, background-color 0.3s;
+    justify-self: center;
+    align-items: center;
   }
   
   .providers-dropdown a:hover {

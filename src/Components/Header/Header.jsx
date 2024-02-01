@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import userImg from '../../assets/images/avatar-icon.png'
 import logo from "../../assets/images/logo.png";
+import Forproviders from './Forproviders';
 import './Header.css';
 
 const navLinks = [
@@ -10,7 +11,7 @@ const navLinks = [
     display: 'Find Doctors'
   },
   {
-    path: '/home',
+    path: '/video',
     display: 'Video Consult'
   },
   {
@@ -19,7 +20,7 @@ const navLinks = [
   },
   {
     path: '/contact',
-    display: 'For Providers'
+    display: <Forproviders />,
   },
 ];
 
@@ -28,9 +29,11 @@ const Header = () => {
     <header className='header'>
       <div className='container'>
         <div className='flex items-center justify-between'>
-          <div className='image'>
-            <img className='logo-icon' src={logo} alt='Icon'/>
-          </div>
+          <Link to='/home'>
+            <div className='image'>
+              <img className='logo-icon' src={logo} alt='Icon'/>
+            </div>
+          </Link>
           <div className='navigation'>
             <ul className='menu '>
               {navLinks.map((link, index) => (
@@ -49,17 +52,17 @@ const Header = () => {
               ))}
             </ul>
           </div>
-          <div className='flex items-center gap-4'></div>
-            <div className='loginback'>
+          <div className='log'></div>
+          <div className='loginback'>
             <Link to='/Login'>
               <button className='login'>Login</button>
             </Link>
-            </div>
-            <div className='signupback'>
-            <Link to='/Signup'>
+          </div>
+          <div className='signupback'>
+            <Link to='/register'>
               <button className='signup'>Signup</button>
             </Link>
-            </div>
+          </div>
         </div>
       </div>
     </header>

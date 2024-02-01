@@ -1,10 +1,103 @@
-.banner {
-    padding: 200px;
-    margin-top: 30px;
-    background-color: #3E97FF;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 75%; /* Adjust the max-width as needed */
+.input-wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.search-bar {
+    display: flex;
+    width: 65vw; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #888787; 
+    padding-right: 50px;
+    margin-top: 40px;
+  }
+  .location-container {
+    display: flex;
+    align-items: center;
+    padding: 0 8px; 
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
   }
   
+  .location-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+   
+  }
+  
+  .location-input,
+  .search-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .location-input:hover,
+  .search-input:hover {
+    background-color: #f8f8f8;
+  }
+  .book-appointment-btn {
+    position: relative;
+    margin-top: -43px;
+    padding: 8px;
+    background-color: #3E97FF;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: -170px ;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .book-appointment-btn:hover {
+    background-color: #101155;
+    color: white;
+    cursor: pointer;
+  }
+ .btn{width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+ }
+
+
+
+  .healthcare{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .banner img{
+    position:absolute;
+    margin-left: 20vw;
+    z-index: 1;
+   margin-top: 7.9rem;
+    max-width: 100%;
+    max-height: 100%;
+    
+  }
+  .bookapp{
+    position: relative;
+    margin-left: 4%;
+    font-family: lato,sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    
+  }
+  .booktext{
+    position: relative;
+    margin-left: 4%;
+    font-family: lato,sans-serif;
+    margin-bottom:10%;
+    margin-bottom:5%;
+  }
