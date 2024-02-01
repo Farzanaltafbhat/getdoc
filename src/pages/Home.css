@@ -101,3 +101,34 @@
     margin-bottom:10%;
     margin-bottom:5%;
   }
+  /* Add this style to your existing CSS or in your Home.css file */
+
+.btn2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.ourspecial{
+  position: relative;
+  margin-top: -16%;
+  padding-left: 1.5vw;
+  padding-top: 0.7vw;
+  padding-bottom: 0.7vw;
+  padding-right: 1.5vw;
+  background-color: #3E97FF;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  font-family: 'Jost', sans-serif;
+}
+.ourspecial:hover{
+  background-color: #101155;
+  color: white;
+  cursor: pointer;
+}

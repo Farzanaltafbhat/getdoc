@@ -5,6 +5,7 @@ import healthcare from '../assets/images/healthcare.png'
 import location from '../assets/images/location.png'
 import Banner from './Carousel/Banner';
 import Card from './Cards/Cards';
+import Cards from './Cards/Cards1'
 import dental from '../assets/images/dental.png';
 import preg from '../assets/images/preg.png';
 import child from '../assets/images/child.png';
@@ -74,11 +75,26 @@ const Home = () => {
     <div>
     <Card />
     </div>
-    <Card />
+    <div className="r">
+          <div className="r">
+          <h1 className='bookapp'>Book an appointment for an in-clinic consultation </h1>
+          </div>
+          <h3 className='booktext'>Find experienced doctors across all specialities</h3>
+        </div>
+        <div className='btn2'>
+        <button className="ourspecial">Our Specialities</button>
+        </div>
+
+    <div>
+    <Cards />
+    </div>
+    
     <div>
       <h1 className='bookapp'>Book an appointment for an in-clinic consultation </h1>
       <h3 className='booktext'>Find experienced doctors across all specialities</h3>
     </div>
+   
+
     <div>
      <Slider />
     </div>
